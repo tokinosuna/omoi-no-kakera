@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>想いの欠片 回憶圖書館</title>
+    
+    <!-- This links to your component's styling -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- These three scripts are essential -->
+    <!-- 1. The React library -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <!-- 2. The library to connect React to the web page (the DOM) -->
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <!-- 3. The in-browser "translator" for JSX -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+</head>
+<body>
+    <!-- React will take control of this single div and build your entire app inside it -->
+    <div id="root"></div>
+
+    <!-- 
+      This is the final, crucial step. 
+      We tell the browser to load your component file, and the 'type="text/babel"'
+      instructs the Babel Standalone script to translate it.
+    -->
+    <script src="data.js"></script> 
+      <script src="Blog.js"></script>
+    <script type="text/babel" src="DailyHeroes.js"></script>
+
+</body>
+</html>
